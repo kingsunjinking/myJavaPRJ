@@ -12,7 +12,7 @@ public class Bakchigigogo {
 
         s.close();
         {
-            for (int i = 1; i <= num*2/1; i++) {
+            for (int i = 1; i <= num*2-1; i++) {
                 if (i <= num) {
                     for (int j = 1; j <= i; j++) {
                         System.out.print("*");
