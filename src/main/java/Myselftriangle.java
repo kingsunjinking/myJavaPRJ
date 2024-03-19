@@ -9,7 +9,7 @@ public class Myselftriangle {
             }
 
             if (i >4) {
-                for(int j = 8; j > i; j--){
+                for(int j = 7; j >= i; j--){
                     System.out.print("*");
                 }
             }
