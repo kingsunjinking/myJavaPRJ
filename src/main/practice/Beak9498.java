@@ -16,7 +16,10 @@ public class Beak9498 {
             else if (a <= 79 && a >= 70) {
                 System.out.print("C");
             }
-            else {
+            else if (a <= 69 && a >= 60) {
+                System.out.print("D");
+            }
+            else{
                 System.out.print("F");
             }
         }
