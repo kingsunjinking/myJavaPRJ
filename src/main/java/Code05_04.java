@@ -20,6 +20,7 @@ public class Code05_04 {
             System.out.println("100보다 크고");
             System.out.println("문장 2개 출력");
         }
+        System.out.println("조건절과 상관없이 무조건 출력");
 
     }
 }
