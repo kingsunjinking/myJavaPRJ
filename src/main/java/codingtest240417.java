@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Zcodingtest240416 {
+public class codingtest240417 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int a = s.nextInt();
