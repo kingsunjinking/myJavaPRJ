@@ -1,11 +1,12 @@
 public class Hello {
-    public static void main(String[] args){
-        System.out.println("Hello!! My First Java Coding!!");
-
-        System.out.println("Edit Java Code!!");
-
-        System.out.println("I'm Kingsunjinking!!");
-
-
-}
+    public static void main(String[] args) {
+        for(int i=2, j=1; i<=9; j++) {
+            System.out.printf("%d * %d = %d\t",i, j, i*j);
+            if(j==9) {
+                i++;
+                j=0;
+                System.out.println();
+            }
+        }
+    }
 }
