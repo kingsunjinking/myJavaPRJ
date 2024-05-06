@@ -7,14 +7,17 @@ public class Baek2501 {
 
         int a = s.nextInt(); int c =s.nextInt();
         ArrayList<Integer> arr = new ArrayList<>();
-        int b=0;
+
         for(int i =1; i <= a; i++){
             if(a % i ==0){
-
                 arr.add(i);
-                b++;
             }
         }
-        System.out.println(arr.get(c-1));
+        if(arr.size() < c){
+            System.out.println("0");
+        }
+        else {
+            System.out.println(arr.get(c - 1));
+        }
     }
 }
