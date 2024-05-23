@@ -1,27 +1,35 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Baek1157 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
-        char[] arr = new char[26];          //알파벳 넣을거라 26칸 문자배열 생성
-        int x = 97;                         //아스키코드 소문자 a는 97부터 시작
-        int count = 0;
-
-        for (int i = 0; i < arr.length - 1; i++) {
-            arr[i] = (char) x;              //배열 안에 알파벳 집어넣음 (char)로 아스키코드 문자로 변환
-            x++;
-        }
-
-        String str = s.nextLine();
-
-        for (int i = 0; i < str.length(); i++) {
-            for (int j = 0; j < arr.length - 1; j++) {
-                if (str.charAt(i) == arr[j]) {
-                    count++;
+        int[] arr = new int[26];
+        int c = 0;
+        String a = s.nextLine();
+        String b = a.toUpperCase();
+        for (int i = 0; i < 26; i++) {
+            for (int j = 0; j < a.length(); j++) {
+                if(b.charAt(j) == (char)i+65) {
+                    arr[i]++;
                 }
             }
         }
-        System.out.println(count);
+
+        for (int i = 0; i < arr.length; i++) {
+            if(Arrays.stream(arr).max().getAsInt() == arr[i]){
+                c=i;
+            }
+        }
+
+        Arrays.sort(arr);
+
+        if(arr[arr.length-1] == arr[arr.length-2]){
+        System.out.println("?");
+        }
+        else {
+            System.out.println((char)(c+65));
+        }
     }
 }
