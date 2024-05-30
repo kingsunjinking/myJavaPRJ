@@ -7,6 +7,7 @@ public class Baek2869 {                     //시간초과
         int a = s.nextInt();
         int b = s.nextInt();
         int c = s.nextInt();
+
         int d = 0;
         int count = 1;
         for (int i = 0; i <c ; i++) {
