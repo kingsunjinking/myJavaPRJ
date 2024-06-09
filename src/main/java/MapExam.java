@@ -9,7 +9,7 @@ public class MapExam {
         map.put("e-mail", "hglee67@kopo.ac.kr");
         map.put("dept", "데이터분석과");
 
-        System.out.println("조쇠 결과");
+        System.out.println("조회 결과");
         System.out.println("name : " + map.get("name"));
         System.out.println("e-mail : " + map.get("e-mail"));
         System.out.println("dept : " + map.get("dept") );
