@@ -1,0 +1,26 @@
+import java.util.*;
+
+class Solution {
+    public List<Integer> solution(int l, int r) {
+        List<Integer> answer = new ArrayList<>();
+        for(int i = l; i <= r; i++){
+            String a = i + "";
+            boolean b = false;
+            for(int j = 0; j < a.length(); j++){
+                if(a.charAt(j) != '5' && a.charAt(j) != '0'){
+                    b = true;
+                    break;
+                }
+            }
+            if(b == false){
+                answer.add(i);
+            }
+        }
+        
+        if(answer.size() == 0){
+            answer.add(-1);
+        }
+        
+        return answer;
+    }
+}
