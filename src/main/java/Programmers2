@@ -1,0 +1,33 @@
+class Solution {
+    public String solution(String code) {
+        String answer = "";
+        String empty = "EMPTY";
+        boolean mode = true;
+        for(int i =0; i<code.length(); i++){
+            if(mode == true){
+                if(code.charAt(i) == '1'){
+                    mode = false;
+                    
+                }
+                else if(i % 2 == 0){
+                    answer += code.charAt(i);
+                }
+            }
+            else if(mode == false){
+                if(code.charAt(i) == '1'){
+                    mode = true;
+                    
+                }
+                else if(i % 2 == 1){
+                    answer += code.charAt(i);
+                }
+            }
+        }
+        if(answer.equals("")){
+            return empty;
+        }
+        else{
+            return answer;
+        }
+    }
+}

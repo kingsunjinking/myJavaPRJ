@@ -1,0 +1,17 @@
+class Solution {
+    public int solution(int[] num_list) {
+        int ans = 0;
+        String ans1 = "";
+        String ans2 = "";
+        for(int i=0; i<num_list.length; i++){
+            if(num_list[i] % 2 == 1){
+                ans1 += (num_list[i] +"");
+            }
+            else{
+                ans2 += (num_list[i] + "");
+            }
+        }
+        ans = Integer.parseInt(ans1) + Integer.parseInt(ans2);
+        return ans;
+    }
+}
