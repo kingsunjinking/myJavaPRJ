@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Baek1100 {
+public class Baek1100 {         //하얀 칸 위의 체스말 구하기
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
