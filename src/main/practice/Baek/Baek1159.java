@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Baek1159 {     //첫글자가 같은 사람으로 농구 팀 뽑기
+public class Baek1159 {     //성의 첫글자가 같은 사람으로 농구 팀 뽑기
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
