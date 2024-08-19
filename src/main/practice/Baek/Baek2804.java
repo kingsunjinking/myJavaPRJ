@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Baek2804 {
+public class Baek2804 {                     //크로스워드
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
