@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Baek1157{
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        String a = s.nextLine().toUpperCase();
+        int[] arr = new int[26];
+        
+        for (int i = 0; i < a.length(); i++) {
+            char b = a.charAt(i);
+            if (b >= 'A' && b <= 'Z') {
+                arr[c - 'A']++;
+            }
+        }
+
+        int d = 0;
+        char e = '?';
+        for (int i = 0; i < 26; i++) {
+            if (arr[i] > d) {
+                d = arr[i];
+                e = (char) (i + 'A');
+            } else if (arr[i] == d) {
+                e = '?';
+            }
+        }
+
+        System.out.println(e);
+    }
+}
