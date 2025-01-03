@@ -1,0 +1,5 @@
+public class Newyear2025{
+  public static void main(String[] args){
+    System.out.println("새해복 많이 받으세요");
+  }
+}

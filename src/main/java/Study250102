@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Study250102 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int a = s.nextInt();
+        int b = s.nextInt();
+
+        int x = a, y = b;
+        while (b != 0) {
+            int tmp = b;
+            b = a % b;
+            a = tmp;
+        }
+
+        int c = (a * b) / x;
+
+        System.out.println(c);
+    }
+}
